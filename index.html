@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    
+    <title>Business Card</title>
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div id="app-wrapper">
+        <header id="header">
+            <div id="nav-wrapper">
+                <nav>
+                    <span>nav_text_1</span>
+                    <span>nav_text_2</span>
+                    <span>nav_text_3</span>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main">
+            <div id="main-content-wrapper">
+                <div>
+                    <div>
+                        <div id="profile-text-wrapper">
+                            <span id="profile-text">profile_text</span>
+                        </div>
+                        <div id="profile-image-wrapper">
+                            <img id="profile-image" src="res/pic.jpg" alt="insert your profile picture here">
+                        </div>
+                    </div>
+                    <div>
+                        <div id="description-text-wrapper">
+                            <span id="description-text">description_text</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div id="footer-text-wrapper">
+                <div>
+                    <span>footer_text</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            let docHeight = document.documentElement.clientHeight;
+            let mainHeight = document.documentElement.clientHeight - document.getElementById('header').offsetHeight;
+
+            document.getElementById('main').style.minHeight = `${mainHeight}px`;
+
+        });
+    </script>
+</body>
+
+
+
+
+
+</html>

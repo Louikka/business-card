@@ -1,0 +1,208 @@
+html {
+    height : 100%;
+    scrollbar-width : none; /**/ overflow : -moz-scrollbars-none; /**/ -ms-overflow-style : none;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar { display : none; }
+body {
+    margin : 0;
+}
+
+
+
+@font-face {
+    font-family : 'Gill Sans';
+    src : url(fonts/Gill\ Sans.otf);
+}
+@font-face {
+    font-family : 'Lucida Sans';
+    src : url(fonts/LSANS.TTF);
+}
+
+
+
+/**
+ *  responsive web design for devices with screenwidth more than 1080px and 
+ */
+@media (min-width : 865px) {
+
+    body {
+        background-color : wheat;
+    }
+
+    #app-wrapper {
+        display : flex;
+        flex-direction : column;
+        min-height : 100vh;
+    }
+
+
+
+    #nav-wrapper {
+        margin : 0 20%;
+    }
+    #nav-wrapper > nav {
+        display : flex;
+        justify-content : flex-end;
+    }
+    #header span {
+        padding : 20px 30px;
+
+        font-size : 1.1pc;
+        font-family : 'Gill Sans', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #main {
+        flex-grow : 1;
+    }
+    #main-content-wrapper {
+        margin : 0 15%;
+        padding : 50px 0;
+    }
+    #main-content-wrapper > div {
+        display : flex;
+        flex-direction : column;
+    }
+    #main-content-wrapper > div > div:nth-child(1) {
+        display : flex;
+    }
+    #profile-text-wrapper {
+        margin : 0 25px;
+        padding : 50px 0;
+        flex-grow : 1;
+    }
+    #profile-text {
+        font-size : 2pc;
+        font-family : 'Gill Sans', 'Lucida Sans', Arial, sans-serif;
+        text-wrap : wrap;
+    }
+    #profile-image {
+        width : 240px;
+        height : auto;
+        margin : 10px;
+
+        box-shadow : 0 0 5px 2px rgba(0, 0, 0, 0.05);
+    }
+    #main-content-wrapper > div > div:nth-child(2) {
+        margin : 0 10px;
+        padding : 25px 0;
+    }
+    #description-text {
+        font-size : 1.5pc;
+        font-family : 'Gill Sans', 'Lucida Sans', Arial, sans-serif;
+        text-wrap : wrap;
+    }
+
+    #footer {
+        margin-top : auto;
+    }
+    #footer-text-wrapper {
+        width : 100vw;
+
+        background-color : rgb(30, 30, 30);
+    }
+    #footer-text-wrapper > div {
+        display : flex;
+        justify-content : flex-end;
+    }
+    #footer span {
+        padding : 20px;
+
+        font-size : 1.2pc;
+        font-family : 'Times New Roman', Times, serif;
+        color : rgb(222, 222, 222);
+    }
+
+}
+/**
+ *  responsive web design for devices with screenwidth equal or less than 1080px (mobile version)
+ */
+@media (max-width : 864px) {
+
+    body {
+        background-color : wheat;
+    }
+
+    #app-wrapper {
+        display : flex;
+        flex-direction : column;
+        min-height : 100vh;
+    }
+
+
+
+    #nav-wrapper {
+        margin : 0 10%;
+    }
+    #nav-wrapper > nav {
+        display : flex;
+        justify-content : center;
+    }
+    #header span {
+        padding : 20px 30px;
+
+        font-size : 1.1pc;
+        font-family : 'Gill Sans', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #main {
+        flex-grow : 1;
+    }
+    #main-content-wrapper {
+        margin : 0 15%;
+        padding : 50px 0;
+    }
+    #main-content-wrapper > div {
+        display : flex;
+        flex-direction : column;
+    }
+    #main-content-wrapper > div > div:nth-child(1) {
+        display : flex;
+        flex-direction : column-reverse;
+    }
+    #profile-text-wrapper {
+        padding : 50px 0;
+        flex-grow : 1;
+    }
+    #profile-text {
+        font-size : 2pc;
+        font-family : 'Gill Sans', 'Lucida Sans', Arial, sans-serif;
+        text-wrap : wrap;
+    }
+    #profile-image {
+        width : 240px;
+        height : auto;
+        margin : 10px;
+
+        box-shadow : 0 0 5px 2px rgba(0, 0, 0, 0.05);
+    }
+    #main-content-wrapper > div > div:nth-child(2) {
+        padding : 25px 0;
+    }
+    #description-text {
+        font-size : 1.5pc;
+        font-family : 'Gill Sans', 'Lucida Sans', Arial, sans-serif;
+        text-wrap : wrap;
+    }
+
+    #footer {
+        margin-top : auto;
+    }
+    #footer-text-wrapper {
+        width : 100vw;
+
+        background-color : rgb(30, 30, 30);
+    }
+    #footer-text-wrapper > div {
+        display : flex;
+        justify-content : flex-end;
+    }
+    #footer span {
+        padding : 20px;
+
+        font-size : 1.2pc;
+        font-family : 'Times New Roman', Times, serif;
+        color : rgb(222, 222, 222);
+    }
+
+}
