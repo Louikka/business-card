@@ -190,7 +190,7 @@ body {
         margin-top : auto;
     }
     #footer-text-wrapper {
-        width : 100%;
+        width : 100vw;
 
         background-color : rgb(30, 30, 30);
     }
